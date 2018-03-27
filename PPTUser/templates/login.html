@@ -5,27 +5,28 @@ Edited by CVI Works
 <html>
 <head>
 <title>PPT Lab | Ready Made presenatation on customers demand</title>
+{% load staticfiles %}
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 <meta name="keywords" content="Grocery Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" >
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
-<link herf="{ % static 'css/bootstrap.css' %} " rel="stylesheet" type="text/css" media="all" />
-<link herf="{ % static 'css/style.css' %} " rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" >
+<link href="{% static 'css/style.css' %} " rel="stylesheet" type="text/css" media="all" >
 <!-- font-awesome icons -->
-<link herf="{ % static 'css/font-awesome.css' %} " rel="stylesheet" type="text/css" media="all" /> 
+<link href="{% static 'css/font-awesome.css' %} " rel="stylesheet" type="text/css" media="all" > 
 <!-- //font-awesome icons -->
 <!-- js -->
-<script src="js/jquery-1.11.1.min.js"></script>
+<script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
 <!-- //js -->
-<link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <!-- start-smoth-scrolling -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -41,7 +42,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- header -->
 	<div class="agileits_header">
 		<div class="w3l_offers">
-			<a herf="{ % static 'special-offers.html' %} ">Special Offers !</a>
+			<a href="{% static 'special-offers.html' %} ">Special Offers !</a>
 		</div>
 		<div class="w3l_search">
 			<form action="#" method="post">
@@ -61,12 +62,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="w3l_header_right">
 			<ul>
 				<li class="dropdown profile_details_drop">
-					<a herf="{ % static '#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
+					<a href="{% static '#' %}" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
-								<li><a herf="{ % static 'login.html' %} ">Login</a></li> 
-								<li><a herf="{ % static 'login.html' %} ">Sign Up</a></li>
+								<li><a href="{% url 'login' %}">Login</a></li> 
+								<li><a href="{% url 'login' %}">Sign Up</a></li>
 							</ul>
 						</div>                  
 					</div>	
@@ -74,7 +75,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</ul>
 		</div>
 		<div class="w3l_header_right1">
-			<h2><a herf="{ % static 'mail.html' %} ">Contact Us</a></h2>
+			<h2><a href="{% static 'mail.html' %} ">Contact Us</a></h2>
 		</div>
 		<div class="clearfix"> </div>
 	</div>
@@ -97,20 +98,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="logo_products">
 		<div class="container">
 			<div class="w3ls_logo_products_left">
-				<h1><a herf="{ % static 'index.html' %} "><span>PPT</span> Lab</a></h1>
+				<h1><a href="{ % static 'index.html' %} "><span>PPT</span> Lab</a></h1>
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="special_items">
-					<li><a herf="{ % static 'events.html' %} ">Events</a><i>/</i></li>
-					<li><a herf="{ % static 'about.html' %} ">About Us</a><i>/</i></li>
-					<li><a herf="{ % static 'best-deals.html' %} ">Best Deals</a><i>/</i></li>
-					<li><a herf="{ % static 'services.html' %} ">Services</a></li>
+					<li><a href="{% static 'events.html' %} ">Events</a><i>/</i></li>
+					<li><a href="{% static 'about.html' %} ">About Us</a><i>/</i></li>
+					<li><a href="{% static 'best-deals.html' %} ">Best Deals</a><i>/</i></li>
+					<li><a href="{% static 'services.html' %} ">Services</a></li>
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="phone_email">
 					<li><i class="fa fa-phone" aria-hidden="true"></i>(+91) 9793088677</li>
-					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a herf="{ % static '#">works.pptlab@gmail.com</a></li>
+					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="{% static '#'}">works.pptlab@gmail.com</a></li>
 				</ul>
 			</div>
 			<div class="clearfix"> </div>
@@ -121,7 +122,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="products-breadcrumb">
 		<div class="container">
 			<ul>
-				<li><i class="fa fa-home" aria-hidden="true"></i><a herf="{ % static 'index.html' %} ">Home</a><span>|</span></li>
+				<li><i class="fa fa-home" aria-hidden="true"></i><a href="{% url 'Index' %} ">Home</a><span>|</span></li>
 				<li>Sign In & Sign Up</li>
 			</ul>
 		</div>
@@ -143,41 +144,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			   <!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav nav_1">
-						<li><a herf="{ % static 'special-offers.html' %} ">Special</a></li>
-						<li><a herf="{ % static 'economics.html' %} ">Economics</a></li>
+						<li><a href="{ % static 'special-offers.html' %} ">Special</a></li>
+						<li><a href="{ % static 'economics.html' %} ">Economics</a></li>
 						<li class="dropdown mega-dropdown active">
-							<a herf="{ % static '#" class="dropdown-toggle" data-toggle="dropdown">Engineering<span class="caret"></span></a>				
+							<a href="{ % static '#' %}" class="dropdown-toggle" data-toggle="dropdown">Engineering<span class="caret"></span></a>				
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
 									<ul>	
-										<li><a herf="{ % static 'mechanical.html' %} ">Mechanical</a></li>
-										<li><a herf="{ % static 'electrical.html' %} ">Electrical</a></li>
-										<li><a herf="{ % static 'computer-science.html' %} ">Computer Science</a></li>
-										<li><a herf="{ % static 'civil.html' %} ">Civil</a></li>
-										<li><a herf="{ % static 'chemical.html' %} ">Chemical</a></li>
+										<li><a href="{% static 'mechanical.html' %} ">Mechanical</a></li>
+										<li><a href="{% static 'electrical.html' %} ">Electrical</a></li>
+										<li><a href="{% static 'computer-science.html' %} ">Computer Science</a></li>
+										<li><a href="{% static 'civil.html' %} ">Civil</a></li>
+										<li><a href="{% static 'chemical.html' %} ">Chemical</a></li>
 									</ul>
 								</div>                  
 							</div>				
 						</li>
-						<li><a herf="{ % static 'humanities.html' %} ">Humanities</a></li>
+						<li><a href="{ % static 'humanities.html' %} ">Humanities</a></li>
 						<li class="dropdown">
-							<a herf="{ % static '#" class="dropdown-toggle" data-toggle="dropdown">Basic Sciences<span class="caret"></span></a>
+							<a href="{ % static '#' %}" class="dropdown-toggle" data-toggle="dropdown">Basic Sciences<span class="caret"></span></a>
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
 									<ul>
-										<li><a herf="{ % static 'physics.html' %} ">Physics</a></li>
-										<li><a herf="{ % static 'chemistry.html' %} ">Chemistry</a></li>
-										<li><a herf="{ % static 'biology.html' %} ">Biology</a></li>
-										<li><a herf="{ % static 'mathematics.html' %} ">Mathematics</a></li>
+										<li><a href="{ % static 'physics.html' %} ">Physics</a></li>
+										<li><a href="{ % static 'chemistry.html' %} ">Chemistry</a></li>
+										<li><a href="{ % static 'biology.html' %} ">Biology</a></li>
+										<li><a href="{ % static 'mathematics.html' %} ">Mathematics</a></li>
 
 
 									</ul>
 								</div>                  
 							</div>	
 						</li>
-						<li><a herf="{ % static 'medical-sciences.html' %} ">Medical Sciences</a></li>
+						<li><a href="{ % static 'medical-sciences.html' %} ">Medical Sciences</a></li>
 						
-						<li><a herf="{ % static 'miscellaneous.html' %} ">Miscellaneous</a></li>
+						<li><a href="{ % static 'miscellaneous.html' %} ">Miscellaneous</a></li>
 					</ul>
 				 </div><!-- /.navbar-collapse -->
 			</nav>
@@ -209,7 +210,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					  <input type="submit" value="Register">
 					</form>
 				  </div>
-				  <div class="cta"><a herf="{ % static '#">Forgot your password?</a></div>
+				  <div class="cta"><a href="{ % static '#' %}">Forgot your password?</a></div>
 				</div>
 			</div>
 			<script>
@@ -268,7 +269,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="w3agile_newsletter_right">
 				<form action="#" method="post">
-					<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+					<input type="email" name="Email" value="Email" onfocus="this.value ='';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
 					<input type="submit" value="subscribe now">
 				</form>
 			</div>
@@ -282,40 +283,40 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-3 w3_footer_grid">
 				<h3>information</h3>
 				<ul class="w3_footer_grid_list">
-					<li><a herf="{ % static 'events.html' %} ">Events</a></li>
-					<li><a herf="{ % static 'about.html' %} ">About Us</a></li>
-					<li><a herf="{ % static 'best-deals.html' %} ">Best Deals</a></li>
-					<li><a herf="{ % static 'services.html' %} ">Services</a></li>
+					<li><a href="{ % static 'events.html' %} ">Events</a></li>
+					<li><a href="{ % static 'about.html' %} ">About Us</a></li>
+					<li><a href="{ % static 'best-deals.html' %} ">Best Deals</a></li>
+					<li><a href="{ % static 'services.html' %} ">Services</a></li>
 					
 				</ul>
 			</div>
 			<div class="col-md-3 w3_footer_grid">
 				<h3>Policy info</h3>
 				<ul class="w3_footer_grid_list">
-					<li><a herf="{ % static 'faqs.html' %} ">FAQ</a></li>
-					<li><a herf="{ % static 'privacy.html' %} ">privacy policy</a></li>
-					<li><a herf="{ % static 'privacy.html' %} ">terms of use</a></li>
+					<li><a href="{ % static 'faqs.html' %} ">FAQ</a></li>
+					<li><a href="{ % static 'privacy.html' %} ">privacy policy</a></li>
+					<li><a href="{ % static 'privacy.html' %} ">terms of use</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 w3_footer_grid">
 				<h3>what in lab</h3>
 				<ul class="w3_footer_grid_list">
-					<li><a herf="{ % static 'medical-sciences.html' %} ">Medical Sciences</a></li>
-					<li><a herf="{ % static 'engineering.html' %} ">Engineering</a></li>
-					<li><a herf="{ % static 'humanities.html' %} ">Humanities</a></li>
-					<li><a herf="{ % static 'products.html' %} ">Standard Products</a></li>
-					<li><a herf="{ % static 'economics.html' %} ">Economics</a></li>
+					<li><a href="{ % static 'medical-sciences.html' %} ">Medical Sciences</a></li>
+					<li><a href="{ % static 'engineering.html' %} ">Engineering</a></li>
+					<li><a href="{ % static 'humanities.html' %} ">Humanities</a></li>
+					<li><a href="{ % static 'products.html' %} ">Standard Products</a></li>
+					<li><a href="{ % static 'economics.html' %} ">Economics</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 w3_footer_grid">
 				<h3>twitter posts</h3>
 				<ul class="w3_footer_grid_list1">
-					<li><label class="fa fa-twitter" aria-hidden="true"></label><i>01 day ago</i><span>Non numquam <a herf="{ % static '#">http://sd.ds/13jklf#</a>
+					<li><label class="fa fa-twitter" aria-hidden="true"></label><i>01 day ago</i><span>Non numquam <a href="{ % static '#">http://sd.ds/13jklf#</a>
 						eius modi tempora incidunt ut labore et
-						<a herf="{ % static '#">http://sd.ds/1389kjklf#</a>quo nulla.</span></li>
-					<li><label class="fa fa-twitter" aria-hidden="true"></label><i>02 day ago</i><span>Con numquam <a herf="{ % static '#">http://fd.uf/56hfg#</a>
+						<a href="{ % static '#' %}">http://sd.ds/1389kjklf#</a>quo nulla.</span></li>
+					<li><label class="fa fa-twitter" aria-hidden="true"></label><i>02 day ago</i><span>Con numquam <a href="{ % static '#">http://fd.uf/56hfg#</a>
 						eius modi tempora incidunt ut labore et
-						<a herf="{ % static '#">http://fd.uf/56hfg#</a>quo nulla.</span></li>
+						<a href="{ % static '#' %}">http://fd.uf/56hfg#</a>quo nulla.</span></li>
 				</ul>
 			</div>
 			<div class="clearfix"> </div>
@@ -330,9 +331,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="w3_footer_grid_bottom">
 						<h5>connect with us</h5>
 						<ul class="agileits_social_icons">
-							<li><a herf="{ % static '#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="{ % static '#' %}" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 							
-							<li><a herf="{ % static '#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							<li><a href="{ % static '#' %}" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
 							
 						</ul>
 					</div>
@@ -340,7 +341,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="clearfix"> </div>
 			</div>
 			<div class="wthree_footer_copy">
-				<p>© 2018 PPT Lab. All rights reserved | Design by <a  herf="{ % static 'http://cviworks.blogspot.in/">CVI Works</a></p>
+				<p>© 2018 PPT Lab. All rights reserved | Design by <a href="http://cviworks.blogspot.in/">CVI Works</a></p>
 			</div>
 		</div>
 	</div>
